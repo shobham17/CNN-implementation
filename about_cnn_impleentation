@@ -1,0 +1,64 @@
+1. Introduction
+
+Convolutional Neural Networks (CNNs) are widely used in computer vision tasks for feature extraction and image analysis. One of the fundamental operations in CNNs is convolution, which helps detect important patterns such as edges, textures, and shapes. This project focuses on implementing edge detection using CNN concepts from scratch without relying on built-in deep learning libraries.
+
+2. Objective
+
+The objective of this project is to:
+
+Implement convolution operation manually using Python and NumPy
+Apply filters to detect edges in an image
+Understand how CNNs extract features from images
+3. Methodology
+Step 1: Image Preprocessing
+The input image is loaded using the Pillow library
+It is converted into grayscale for simplicity
+The image is resized to a fixed dimension (256×256)
+Step 2: Convolution Operation
+A custom convolution function is implemented
+A kernel (filter) slides over the image
+Element-wise multiplication is performed
+The sum of values produces a feature map
+Step 3: Filters Used
+
+Two filters are used:
+
+Vertical filter → detects vertical edges
+Horizontal filter → detects horizontal edges
+Step 4: Activation Function
+ReLU (Rectified Linear Unit) is applied
+It removes negative values and introduces non-linearity
+Step 5: Feature Combination
+Vertical and horizontal feature maps are combined
+This produces a more complete edge representation
+4. Algorithm
+Load the input image
+Convert it to grayscale
+Define convolution filters
+Apply convolution operation
+Apply ReLU activation
+Combine feature maps
+Display results
+5. Results
+Vertical edges such as poles and lane markings were successfully detected
+Horizontal edges such as road boundaries were identified
+Combined output provided a clear representation of overall edges
+6. Applications
+Object detection
+Autonomous driving systems
+Image segmentation
+Medical image analysis
+7. Conclusion
+
+This project demonstrates how convolution works in CNNs for edge detection. By implementing the process from scratch, we gain a deeper understanding of feature extraction and the importance of filters in image processing. The results show that even simple CNN operations can effectively detect important structures in images.
+
+8. Future Scope
+Add more filters (diagonal, blur, sharpen)
+Implement full CNN with multiple layers
+Apply on larger datasets
+Integrate with classification tasks
+9. Tools Used
+Python
+NumPy
+Matplotlib
+Pillow
